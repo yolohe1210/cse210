@@ -1,5 +1,5 @@
-// Beyong the basic requirement, I also add a Library class that allows 
-// the program to randomly show different scriptures when the user runs it.
+// Beyond the basic requirements, this program also includes a Library class
+// that allows a random scripture to be displayed each time the program runs.
 using System;
 class Program
 {
