@@ -1,0 +1,5 @@
+20
+SimpleGoal:Wake up early,6am,20,True
+EternalGoal:Study scripture,Do it daily for 10 minutes,10
+NegativeGoal:Check social media,before bedtime,20
+SimpleGoal:Do exercise,Walk 10000 steps per day,20,False
