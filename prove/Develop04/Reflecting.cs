@@ -47,7 +47,6 @@ public class Reflecting : Activity
         Console.Clear();
 
         DateTime endTime = DateTime.Now.AddSeconds(_duration);
-
         while (DateTime.Now < endTime)
         {
             string question = GenerateQuestion();

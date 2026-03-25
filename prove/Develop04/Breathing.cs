@@ -8,7 +8,6 @@ public class Breathing : Activity
     public override void Run()
     {
         DateTime endTime = DateTime.Now.AddSeconds(_duration);
-
         while (DateTime.Now < endTime)
         {
             Console.Write("\nBreathe in... ");

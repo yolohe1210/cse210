@@ -21,7 +21,8 @@ public class Listing : Activity {
         Console.WriteLine($" --- {GeneratePrompt()} --- ");
         Console.WriteLine($"You may begin in: ");
         ShowCountdown(5);
-        Console.WriteLine(); 
+        Console.WriteLine();
+         
         DateTime endTime = DateTime.Now.AddSeconds(_duration);
         int listCount = 0;
         while (DateTime.Now < endTime) {

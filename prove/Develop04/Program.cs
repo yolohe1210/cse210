@@ -55,7 +55,7 @@ class Program
             Console.Clear();
 
             activity.DisplayStartingMessage();
-            activity.Run();   // ⭐ 统一入口
+            activity.Run();   
             activity.DisplayEndingMessage();
 
             Console.WriteLine("\n--- Activity Log ---");

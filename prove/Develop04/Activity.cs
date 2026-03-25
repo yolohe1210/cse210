@@ -46,5 +46,7 @@ public abstract class Activity
             i = (i + 1) % animationCharacters.Count; 
         }
     }
-    public virtual void Run() { }
+    public virtual void Run() {
+
+    }
 }
