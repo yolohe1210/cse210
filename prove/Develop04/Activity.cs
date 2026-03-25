@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic; 
 using System.Threading;
-public class Activity
+public abstract class Activity
 {
     protected string _name;
     protected string _description;
@@ -21,7 +21,7 @@ public class Activity
     {
         Console.WriteLine("\nWell done!!");
         ShowSpinner(3);
-        Console.WriteLine($"You have completed another {_duration} seconds of the {_name}.");
+        Console.WriteLine($"\nYou have completed another {_duration} seconds of the {_name}.");
         ShowSpinner(3);
     }
     public void ShowCountdown(int seconds) 
@@ -46,28 +46,5 @@ public class Activity
             i = (i + 1) % animationCharacters.Count; 
         }
     }
-    public void ExecuteActivity(string choice) 
-    {
-        if (choice == "1") 
-        {
-            Breathing b = new Breathing(); 
-            b.DisplayStartingMessage();   
-            b.RunBreathing(_duration);     
-            b.DisplayEndingMessage();
-        }
-        else if (choice == "2") 
-        {
-            Reflecting r = new Reflecting();
-            r.DisplayStartingMessage();
-            r.RunReflecting(_duration);
-            r.DisplayEndingMessage();
-        }
-        else if (choice == "3") 
-        {
-            Listing l = new Listing();
-            l.DisplayStartingMessage();
-            l.RunListing(_duration);
-            l.DisplayEndingMessage();
-        }
-    }
+    public virtual void Run() { }
 }
